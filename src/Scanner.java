@@ -140,8 +140,8 @@ public class Scanner {
 				while (program.charAt(pos) != '~') {
 					pos++;
 				}
-				program = program.replace(program.subSequence(oldPos,pos)," ");
-				program = program.replace('~', ' '); // TODO: This shouldn't be necessary?
+				program = program.replace(program.subSequence(oldPos,pos+1)," ");
+				program = program.trim();
 				pos = oldPos + 1;
 				return;
 			}

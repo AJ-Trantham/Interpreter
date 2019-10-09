@@ -1,70 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40b574b1-157e-4b7e-a272-c2923f3d6d87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/Environment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/EvalException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/Interpreter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/META-INF/ia1.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeAddop.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeAssn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeExpr.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeFact.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeFactExpr.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeFactId.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeFactNum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeMulop.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeTerm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/Parser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/Scanner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/SyntaxException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-files/production/ia1/Token.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NodeFact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test-two/inp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ia1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ia1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Environment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Environment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvalException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Grammar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interpreter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeAddop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeAddop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeAddop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeAssn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeAssn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeAssn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeExpr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeFact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeFact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeFactExpr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeFactExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeFactExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeFactId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeFactId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeFactId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeFactNum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeFactNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeFactNum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeMulop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeMulop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeMulop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeStmt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeTerm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeTerm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SyntaxException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SyntaxException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SyntaxException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Token.java" afterDir="false" />
-    </list>
+    <list default="true" id="40b574b1-157e-4b7e-a272-c2923f3d6d87" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
