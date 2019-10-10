@@ -9,7 +9,7 @@ public class NodeFactNum extends NodeFact {
 	this.num=num;
     }
 
-    public int eval(Environment env) throws EvalException {
+    public double eval(Environment env) throws EvalException {
 	return Integer.parseInt(num);
     }
 

@@ -9,7 +9,7 @@ public class NodeAssn extends Node {
 	this.expr=expr;
     }
 
-    public int eval(Environment env) throws EvalException {
+    public double eval(Environment env) throws EvalException {
 	return env.put(id,expr.eval(env));
     }
 

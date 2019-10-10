@@ -3,11 +3,11 @@ public class NodeStmt extends Node {
 
     private NodeAssn assn;
 
-    public NodeStmt(NodeAssn assn) {
+    public  NodeStmt(NodeAssn assn) {
 	this.assn=assn;
     }
 
-    public int eval(Environment env) throws EvalException {
+    public double eval(Environment env) throws EvalException {
 	return assn.eval(env);
     }
 

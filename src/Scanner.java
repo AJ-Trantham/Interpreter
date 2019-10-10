@@ -1,6 +1,7 @@
 // This class is a scanner for the program
 // and programming language being interpreted.
 
+import java.io.File;
 import java.util.*;
 
 public class Scanner {
@@ -136,7 +137,7 @@ public class Scanner {
 			int oldPos = pos;
 			pos++;
 			String lexeme=program.substring(oldPos,pos);
-			if (comments.contains(lexeme)) {
+			if (lexeme.equals("~")) {
 				while (program.charAt(pos) != '~') {
 					pos++;
 				}
@@ -144,6 +145,17 @@ public class Scanner {
 				program = program.trim();
 				pos = oldPos + 1;
 				return;
+			} else {
+				if (lexeme.concat(program.substring(oldPos+1, ++pos)).equals("//")) {
+					String potentialComment = program.substring(oldPos, program.length());
+					java.util.Scanner scan = new java.util.Scanner(potentialComment);
+					String comment = scan.nextLine();
+					pos += comment.length();
+					program = program.replace(comment," ");
+					program = program.trim();
+					pos = oldPos + 2;
+					return;
+				}
 			}
 		}
     }

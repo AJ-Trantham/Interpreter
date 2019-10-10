@@ -2,6 +2,9 @@
 // You are expected to implement the methods.
 // Accessing an undefined variable should throw an exception.
 
+// TODO: Need to create the exception and call the put when an id is reconized with a value.
+//Fumbling the future Xerox!!!
+
 // Hint!
 // Use the Java API to implement your Environment.
 // Browse:
@@ -13,9 +16,22 @@
 //   http://www.javatpoint.com/java-map
 // and elsewhere.
 
-public class Environment {
+import java.util.HashMap;
 
-    public int put(String var, int val) { return val; }
-    public int get(int pos, String var) throws EvalException { return 0; }
+public class Environment {
+    private HashMap<Integer, Integer> environment;
+
+    public Environment() {
+        environment = new HashMap<>();
+    }
+
+    public double put(String var, double val) {
+        environment.put(var.hashCode(), (int) val);
+        return val;
+    }
+    public double get(int pos, String var) throws EvalException {
+        int key = var.hashCode();
+        return environment.get(key);
+    }
 
 }
