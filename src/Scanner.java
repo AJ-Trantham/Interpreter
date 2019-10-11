@@ -1,7 +1,6 @@
 // This class is a scanner for the program
 // and programming language being interpreted.
 
-import java.io.File;
 import java.util.*;
 
 public class Scanner {
@@ -59,8 +58,7 @@ public class Scanner {
 
 	// creates the set of tokens that represent comments
 	private void initComments(Set<String> s) {
-    	s.add("/");
-    	s.add("//");
+    	s.add("@");
     	s.add("~"); // ~things between two tildes are considered comments~
 	}
 
@@ -143,17 +141,17 @@ public class Scanner {
 				}
 				program = program.replace(program.subSequence(oldPos,pos+1)," ");
 				program = program.trim();
-				pos = oldPos + 1;
+				pos = oldPos;
 				return;
 			} else {
-				if (lexeme.concat(program.substring(oldPos+1, ++pos)).equals("//")) {
-					String potentialComment = program.substring(oldPos, program.length());
+				if (lexeme.concat(program.substring(oldPos+1, ++pos)).equals("@@")) {
+					String potentialComment = program.substring(oldPos);
 					java.util.Scanner scan = new java.util.Scanner(potentialComment);
 					String comment = scan.nextLine();
-					pos += comment.length();
+					pos += comment.length()-1; //Should this be -1, doesn't seem to matter
 					program = program.replace(comment," ");
 					program = program.trim();
-					pos = oldPos + 2;
+					pos = oldPos;
 					return;
 				}
 			}
@@ -170,6 +168,7 @@ public class Scanner {
 	}
 	many(whitespace);
 	String c=program.charAt(pos)+"";
+
 	if (digits.contains(c))
 	    nextNumber();
 	else if (comments.contains(c)) {

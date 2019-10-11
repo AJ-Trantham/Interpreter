@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40b574b1-157e-4b7e-a272-c2923f3d6d87" name="Default Changelist" comment="" />
+    <list default="true" id="40b574b1-157e-4b7e-a272-c2923f3d6d87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NodeMinus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/Environment.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/Environment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/NodeAddop.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeAddop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/NodeAssn.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeAssn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/NodeExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/NodeFact.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeFact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/NodeFactExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeFactExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/NodeFactId.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeFactId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/NodeFactNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeFactNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/NodeMulop.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeMulop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/NodeStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/NodeTerm.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/NodeTerm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-files/production/ia1/Scanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/class-files/production/ia1/Scanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NodeFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeFact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NodeFactNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeFactNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NodeTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scanner.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +48,13 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,7 +99,13 @@
     <configuration name="Interpreter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Interpreter" />
       <module name="ia1" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;x ~This is a comment~ = 1 + 2;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;x=-1/2;##commnet&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="PROGRAM_PARAMETERS" value="x = 1+2; //this is a comment" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,6 +129,7 @@
       <workItem from="1570458852647" duration="1462000" />
       <workItem from="1570485063786" duration="16748000" />
       <workItem from="1570568160904" duration="9303000" />
+      <workItem from="1570721458766" duration="13467000" />
     </task>
     <servers />
   </component>
@@ -115,43 +153,38 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Interpreter.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Parser.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Environment.java</url>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner.java</url>
-          <line>163</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/src/NodeAssn.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/NodeFactId.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Scanner.java</url>
-          <line>134</line>
-          <option name="timeStamp" value="12" />
+          <line>146</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Parser.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="13" />
+          <line>88</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/NodeMulop.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner.java</url>
-          <line>154</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/Parser.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

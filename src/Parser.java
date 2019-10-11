@@ -55,6 +55,18 @@ public class Parser {
 	return null;
     }
 
+    private NodeMinus parseMinus() throws SyntaxException {
+		if (curr().equals(new Token("-"))) {
+			match("-");
+			NodeMinus minus=parseMinus();
+			if (minus != null)
+				return new NodeMinus(minus);
+			NodeFact fact = parseFact();
+			return new NodeMinus(fact);
+		}
+		return null;
+	}
+
 	private NodeFact parseFact() throws SyntaxException {
 	if (curr().equals(new Token("("))) {
 	    match("(");
@@ -65,7 +77,7 @@ public class Parser {
 	if (curr().equals(new Token("id"))) {
 	    Token id=curr();
 	    match("id");
-	    return new NodeFactId(pos(),id.lex());
+		return new NodeFactId(pos(),id.lex());
 	}
 	Token num=curr();
 	match("num");
@@ -73,10 +85,15 @@ public class Parser {
     }
 
 	private NodeTerm parseTerm() throws SyntaxException {
-	NodeFact fact=parseFact();
+	NodeFact fact;
+	fact=parseMinus();
+	if (fact == null) {
+		fact=parseFact();
+	}
 	NodeMulop mulop=parseMulop();
-	if (mulop==null)
-	    return new NodeTerm(fact,null,null);
+	if (mulop==null) {
+				return new NodeTerm(fact, null, null);
+	}
 	NodeTerm term=parseTerm();
 	term.append(new NodeTerm(fact,mulop,null));
 	return term;

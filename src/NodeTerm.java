@@ -20,9 +20,13 @@ public class NodeTerm extends Node {
     }
 
     public double eval(Environment env) throws EvalException {
-	return term==null
-	    ? fact.eval(env)
-	    : mulop.op(term.eval(env),fact.eval(env));
+    double res = 0;
+	if (term==null) {
+		res = fact.eval(env);
+	} else {
+		res = mulop.op(term.eval(env),fact.eval(env));
+	}
+	 return res;
     }
 
 }
